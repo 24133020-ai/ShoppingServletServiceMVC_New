@@ -1,0 +1,16 @@
+# Build output
+target/
+*.class
+*.war
+
+# IDE
+.idea/
+*.iml
+.settings/
+.classpath
+.project
+.vscode/
+
+# Cấu hình chứa mật khẩu email & Cloudinary - KHÔNG commit
+src/main/resources/mail.properties
+src/main/resources/cloudinary.properties

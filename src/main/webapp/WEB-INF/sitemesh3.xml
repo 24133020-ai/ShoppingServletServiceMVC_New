@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+    <decorator-prefix>/WEB-INF/decorators/</decorator-prefix>
+    <!-- Một Bootstrap template dùng chung cho toàn bộ trang HTML -->
+    <dispatch-mode>include</dispatch-mode>
+    <!-- Loại trừ response ảnh và tài nguyên tĩnh trước mapping toàn trang. -->
+    <mapping path="/image" exclude="true" />
+    <mapping path="/assets/*" exclude="true" />
+    <mapping path="/css/*" exclude="true" />
+    <mapping path="/js/*" exclude="true" />
+    <mapping path="/images/*" exclude="true" />
+    <mapping path="/*" decorator="bootstrap.html" />
+</sitemesh>

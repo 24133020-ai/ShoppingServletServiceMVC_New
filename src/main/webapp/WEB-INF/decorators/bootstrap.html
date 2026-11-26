@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><sitemesh:write property="title" /></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html, body { min-height: 100%; }
+        body { background: #f4f7fb; color: #263238; font-family: Arial, sans-serif; }
+        .site-navbar { background: #17324d; border: 0; border-radius: 0; margin-bottom: 24px; }
+        .site-navbar .navbar-brand, .site-navbar .navbar-text { color: #fff !important; }
+        .site-navbar .navbar-brand { font-weight: 700; letter-spacing: .2px; }
+        .site-navbar .navbar-text { color: #d8e4ef !important; }
+        .site-main { min-height: calc(100vh - 125px); padding-bottom: 28px; }
+        .site-footer { border-top: 1px solid #dce4ec; color: #718096; padding: 16px 0; margin-top: 24px; text-align: center; font-size: 12px; }
+        .form-control:focus { border-color: #4b91c8; box-shadow: 0 0 0 2px rgba(75,145,200,.12); }
+        @media (max-width: 767px) { .site-navbar .navbar-text { display: none; } }
+    </style>
+    <sitemesh:write property="head" />
+</head>
+<body>
+    <main class="site-main">
+        <sitemesh:write property="body" />
+    </main>
+
+    <footer class="site-footer">
+        Shopping Servlet Service MVC &copy; 2026 · Trần Hữu Việt Huân
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
